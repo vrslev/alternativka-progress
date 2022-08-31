@@ -1,0 +1,13 @@
+[package]
+name = "alternativka-progress"
+version = "0.1.0"
+edition = "2021"
+description = "Webpage with my alternative civilian service progress"
+readme = "README.md"
+repository = "https://github.com/vrslev/alternativka-progress"
+license = "MIT"
+
+[dependencies]
+fraction = "0.11.1"
+yew = "0.19"
+chrono = "0.4"
