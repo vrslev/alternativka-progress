@@ -483,8 +483,8 @@ function getImports() {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper144 = function(arg0, arg1, arg2) {
-        const ret = makeClosure(arg0, arg1, 47, __wbg_adapter_18);
+    imports.wbg.__wbindgen_closure_wrapper138 = function(arg0, arg1, arg2) {
+        const ret = makeClosure(arg0, arg1, 45, __wbg_adapter_18);
         return addHeapObject(ret);
     };
 
@@ -520,7 +520,7 @@ function initSync(bytes) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('alternativka-progress-bd52471c29d852a_bg.wasm', import.meta.url);
+        input = new URL('alternativka-progress-e6c042c06dd8aeb2_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
