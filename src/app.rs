@@ -1,22 +1,19 @@
-use std::str::FromStr;
-
 use chrono::{TimeZone, Utc};
 use fraction::Fraction;
 use yew::prelude::*;
 
 #[function_component(App)]
 pub fn app() -> Html {
-    let start = Utc.ymd(2022, 05, 05);
+    // Actually, 2022-05-05, but this way total number of days is 640.
+    let start = Utc.ymd(2022, 05, 06);
     let end = Utc.ymd(2024, 02, 05);
 
     let now = Utc::today();
     let elapsed = (now - start).num_days();
     let all = (end - start).num_days();
 
-    let decimal = elapsed as f32 / all as f32;
-    let fraction = Fraction::from_str(&format!("{:.2}", decimal)).unwrap();
-    let percent = format!("({:.0}%)", decimal * 100.0);
-
+    let fraction = Fraction::new(elapsed as u64, all as u64);
+    let percent = format!("({:.0}%)", (elapsed as f32 / all as f32) * 100.0);
     let day_of = format!("Day {} of {}", elapsed, all);
 
     html! {
