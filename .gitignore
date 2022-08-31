@@ -1,4 +1,5 @@
 .DS_Store
 dist/
+index-compiled.css
 node_modules/
 target/
