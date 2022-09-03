@@ -17,10 +17,10 @@ pub fn app() -> Html {
     let day_of = format!("Day {} of {}", elapsed, all);
 
     html! {
-        <main class="grid items-center justify-items-center gap-5">
+        <main class="grid items-center justify-items-center md:gap-5 gap-3">
             <h2 class="font-semibold text-3xl">{ "Progress:" }</h2>
-            <h1 class="font-semibold text-9xl">{ fraction }</h1>
-            <div class="flex gap-5 items-center justify-center font-medium mt-3">
+            <h1 class="font-semibold md:text-9xl text-8xl">{ fraction }</h1>
+            <div class="flex gap-5 items-center justify-center font-medium md:mt-3 mt-2">
                 <div>{ percent }</div>
                 <div>{ day_of }</div>
             </div>
