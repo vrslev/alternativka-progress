@@ -13,7 +13,7 @@ pub fn app() -> Html {
     let all = (end - start).num_days();
 
     let fraction = Fraction::new(elapsed as u64, all as u64);
-    let percent = format!("({:.0}%)", (elapsed as f32 / all as f32) * 100.0);
+    let percent = format!("({:.1}%)", (elapsed as f32 / all as f32) * 100.0);
     let day_of = format!("Day {} of {}", elapsed, all);
 
     html! {
