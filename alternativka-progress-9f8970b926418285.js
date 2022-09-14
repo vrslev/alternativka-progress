@@ -520,7 +520,7 @@ function initSync(bytes) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('alternativka-progress-dd26d611c72d27ce_bg.wasm', import.meta.url);
+        input = new URL('alternativka-progress-9f8970b926418285_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
