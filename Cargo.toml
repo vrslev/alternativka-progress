@@ -8,6 +8,7 @@ repository = "https://github.com/vrslev/alternativka-progress"
 license = "MIT"
 
 [dependencies]
-fraction = "0.11.1"
-yew = "0.19"
-chrono = "0.4"
+fraction = "0.11.2"
+yew = "0.19.3"
+chrono = "0.4.22"
+date_component = "0.3.0"
